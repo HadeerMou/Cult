@@ -5,8 +5,7 @@
   padding: 0px;
 }
 .logo {
-  display: block;
-  position: fixed;
+  position: absolute;
 }
 
 .title {
@@ -42,4 +41,34 @@
   height: 40pc;
   width: 40pc;
   display: inline-block;
+}
+.intro {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 40px;
+  margin: 7rem 10rem 2rem 10rem;
+  padding: 3rem;
+}
+.bookNow {
+  margin-bottom: 10rem;
+}
+.book {
+  position: absolute;
+  left: 50%;
+  display: block;
+  padding: 18px;
+  margin: 0;
+  background-color: blanchedalmond;
+  color: black;
+  border-radius: 30px;
+  border: 30px;
+  width: 10pc;
+  font-size: large;
+  font-weight: bolder;
+}
+.book i {
+  margin: 2px;
+  color: black;
+  background-color: transparent;
 }
