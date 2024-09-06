@@ -6,14 +6,32 @@
 .Title {
   font-size: 280px;
   text-align: center;
-  padding: 4rem;
+  padding: 7rem;
+}
+hr {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  height: 2px;
+  background-color: white;
 }
 
 .overview p {
-  max-width: 25rem;
 }
 .text {
-  margin-left: 20%;
+  padding: 6rem;
+  text-align: center;
+  max-width: 70pc;
+  margin-left: 8%;
+}
+.text h1 {
+  padding: 2rem;
+  font-size: 50px;
+}
+.text p {
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 .overview img,
@@ -25,4 +43,19 @@
   width: 600px;
   height: 600px;
   padding: 30px;
+}
+
+.mission,
+.vision {
+  font-size: 30px;
+  max-width: 50pc;
+  padding: 30px;
+  margin: 60px;
+}
+.mission h1,
+.vision h1 {
+  margin-bottom: 100px;
+}
+.vision {
+  float: right;
 }

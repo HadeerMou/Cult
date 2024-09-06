@@ -1,0 +1,45 @@
+* {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  display: block;
+  position: fixed;
+}
+
+.title {
+  display: inline-block;
+  padding: 0px 40px;
+  letter-spacing: 12px;
+  margin: 50px 35px 0px 0rem;
+}
+.port,
+.folio {
+  font-size: 13pc;
+}
+.folio {
+  margin-bottom: 3pc;
+}
+.quote {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 30px;
+  letter-spacing: 7px;
+  margin: 0pc 0 4pc 0;
+}
+
+.port {
+  color: transparent;
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: white;
+  margin-bottom: 80px;
+}
+
+.portfolio {
+  margin-top: 10rem;
+  height: 40pc;
+  width: 40pc;
+  display: inline-block;
+}

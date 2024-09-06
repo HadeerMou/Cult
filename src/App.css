@@ -50,7 +50,6 @@
 .links {
   padding: 1.8em;
   float: right;
-  display: flex;
   justify-content: space-evenly;
 }
 .links li {
@@ -66,15 +65,17 @@
 }
 
 /*Headline*/
-.headline h2 {
+.headline {
+  padding: 5rem;
   text-align: center;
+}
+.headline h2 {
   font-size: 80px;
   max-width: 1200px;
   margin-left: 10%;
 }
 .headline h3 {
   max-width: 1000px;
-  text-align: center;
   font-size: 24px;
   margin-left: 15%;
   padding: 20px;
@@ -88,12 +89,13 @@
   margin: 3rem 0px;
 }
 .WhoAreWe h1 {
+  font-size: 45px;
   margin-left: 10%;
   margin-bottom: 5rem;
 }
 .WhoAreWe p {
-  max-width: 900px;
-  font-size: 37px;
+  max-width: 800px;
+  font-size: 25px;
   margin-left: 25%;
   margin-bottom: 40px;
 }
