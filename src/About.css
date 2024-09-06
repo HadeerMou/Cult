@@ -1,0 +1,28 @@
+* {
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+
+.Title {
+  font-size: 280px;
+  text-align: center;
+  padding: 4rem;
+}
+
+.overview p {
+  max-width: 25rem;
+}
+.text {
+  margin-left: 20%;
+}
+
+.overview img,
+.text {
+  display: inline-block;
+}
+
+.overview img {
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+}
