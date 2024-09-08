@@ -132,8 +132,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.comment {
-}
+
 .comment p {
   color: #242424;
   font-size: 1rem;
@@ -170,6 +169,16 @@
 }
 
 /*Photography*/
+.photography {
+  padding: 5rem 3rem;
+}
+.PhotoTypes {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 20px;
+  padding: 40px 0px;
+  text-shadow: #ffffff7f 2px 2px 10px;
+}
 .product {
   max-width: 950px;
   padding: 10px 50px;
@@ -228,4 +237,73 @@
   box-shadow: 0 5px 11px 0 black, 0 4px 11px 0 black;
   opacity: 1;
   top: 0;
+}
+
+/*photography*/
+.images {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.image:hover {
+  border: 1px solid white;
+}
+
+.image {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  padding: 3px;
+}
+.image img {
+  max-height: 220px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.content:hover {
+  opacity: 1;
+}
+.content h2 {
+  text-align: center;
+  line-height: 25px;
+  font-size: 32px;
+  color: rgb(162, 100, 100);
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+.content p {
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 350px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+.content > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+.content:hover > * {
+  transform: translateY(0px);
 }
