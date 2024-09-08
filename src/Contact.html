@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="Contact.css" />
     <link rel="stylesheet" type="text/css" href="App.css" />
     <link href="assets/css/all.css" rel="stylesheet" />
-    <link href="assets/css/all.css" rel="stylesheet" />
-    <img class="logo" src="assets/cultLogo 2.png" alt="Logo" />
+    <a href="App.jsx"
+      ><img class="logo" src="assets/cultLogo 2.png" alt="Logo"
+    /></a>
   </head>
   <body>
     <div class="title">
@@ -19,54 +20,68 @@
       </h1>
     </div>
 
-    <div class="contact-info">
-      <h2>Contact information</h2>
-      <ul>
-        <li>
-          <h3>Phone</h3>
-          <a>+20 150 051 1826</a>
-        </li>
-        <li>
-          <h3>Email</h3>
-          <a>info@cultsmma.com</a>
-        </li>
-      </ul>
-    </div>
     <!--Contact form-->
     <div class="contact">
-      <h1>Send us a Message</h1>
-      <form id="form" action="">
-        <div class="inputBox">
-          <input id="name" type="text" placeholder="Name" />
+      <h1 class="formtitle">Get In Touch!</h1>
+      <form
+        id="contact_form"
+        action="#"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="row">
+          <label class="required" for="name">Your name:</label><br />
+          <input
+            id="name"
+            class="input"
+            name="name"
+            type="text"
+            value=""
+            size="30"
+          /><br />
+          <span id="name_validation" class="error_message"></span>
         </div>
-        <div class="inputBox">
-          <input id="email" type="email" placeholder="Email Address" />
+        <div class="row">
+          <label class="required" for="email">Your email:</label><br />
+          <input
+            id="email"
+            class="input"
+            name="email"
+            type="text"
+            value=""
+            size="30"
+          /><br />
+          <span id="email_validation" class="error_message"></span>
         </div>
-        <div class="inputBox">
-          <input id="subject" type="text" placeholder="Subject" />
-        </div>
-        <div class="inputBox">
-          <label for="inquiryType">Inquiry Type</label>
+        <div class="row">
+          <label class="required" for="inquiryType">Inquiry Type</label><br />
           <select name="inquiryType" id="inquiryType">
             <option value="general Inquiry">General Inquiry</option>
             <option value="service Booking">Service Booking</option>
             <option value="partnership">Partenership</option>
           </select>
         </div>
-        <textarea
-          class="inputBox"
-          name=""
-          placeholder="Your message"
-          id="message"
-          cols="30"
-          rows="5"
-        ></textarea>
-        <button class="submit" type="submit">Send Message</button>
-
-        <div id="error"></div>
+        <div class="row">
+          <label class="required" for="message">Your message:</label><br />
+          <textarea
+            id="message"
+            class="input"
+            name="message"
+            rows="7"
+            cols="30"
+          ></textarea
+          ><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+        <input id="submit_button" type="submit" value="Send Message" />
+        <!--<i class="fa-solid fa-comment icon" style="color: #000000;"></i>-->
       </form>
     </div>
+    <div class="img">
+      <img src="assets/contact 1.png" alt="" />
+    </div>
   </body>
+
   <footer>
     <div class="footer">
       <div class="contact-info">

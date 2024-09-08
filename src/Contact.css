@@ -3,22 +3,72 @@
   color: white;
   margin: 0px;
   padding: 0px;
+  scrollbar-width: none;
+  width: fit-content;
 }
-.contact {
-  align-items: center;
-  background-color: white;
-  padding: 20px 50px 20px 20px;
-  border-radius: 20px;
-  max-width: 38rem;
-  margin-left: 50%;
-  text-align: center;
+.img{
+  display: inline-block;
+  width: 20rem;
+  margin-left: 50px;
+}
+.contact{
   display: inline-block;
 }
-.inputBox {
-  margin: 10px;
-  color: white;
+.formtitle {
+  padding: 5rem 5rem 3rem 5rem;
+  font-size: 60px;
 }
-.submit {
+#contact_form {
+  padding: 0 0 8rem 0;
+  margin-left: 5rem;
+}
+#contact_form * {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.row label {
+  font-size: 26px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 30pc;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffffde;
+  border-radius: 10px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px #393939;
+}
+input[type="text"] {
+  height: 15px;
+
+}
+select {
+}
+textarea {
+}
+input[type="submit"] {
+  margin-left: 7pc;
+  margin-top: 2rem;
+  background-color: #d7c208;
+  color: black;
+  width: 12pc;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #5e5e5e;
+  cursor: pointer;
+}
+#inquiryType{
+  font-size: 18px;
+  font-weight: bold;
+  size: 18px;
+}
+/*.submit {
   position: absolute;
   display: block;
   padding: 17px;

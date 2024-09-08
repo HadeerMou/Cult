@@ -1,7 +1,9 @@
 function Header() {
   return (
     <>
-      <img className="logo" src="src/assets/cultLogo 1.png" alt="Logo" />
+      <a href="#">
+        <img className="logo" src="src/assets/cultLogo 1.png" alt="Logo" />
+      </a>
       <ul className="links">
         <li>
           <a href="App.jsx">Home</a>
