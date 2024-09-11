@@ -6,10 +6,13 @@
   scrollbar-width: none;
   width: fit-content;
 }
-.img{
+.img {
   display: inline-block;
   width: 20rem;
-  margin-left: 50px;
+  margin-left: 70px;
+}
+.img img{
+  width: 900px;
 }
 .contact{
   display: inline-block;
@@ -19,16 +22,18 @@
   font-size: 60px;
 }
 #contact_form {
-  padding: 0 0 8rem 0;
   margin-left: 5rem;
+  width: 600px;
 }
 #contact_form * {
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 .row label {
   font-size: 26px;
 }
+
 input[type="text"],
 select,
 textarea {
@@ -47,10 +52,6 @@ input[type="text"] {
   height: 15px;
 
 }
-select {
-}
-textarea {
-}
 input[type="submit"] {
   margin-left: 7pc;
   margin-top: 2rem;
@@ -63,10 +64,27 @@ input[type="submit"] {
   box-shadow: 5px 5px 5px #5e5e5e;
   cursor: pointer;
 }
+#submit_button:hover{
+  background-color: #b0a00a;
+  transition: all 1s ease;
+}
 #inquiryType{
   font-size: 18px;
   font-weight: bold;
   size: 18px;
+}
+
+@media (max-width: 800px) {
+  #contact_form{
+    width: 80vw;
+  }
+  .img{
+    display: none;
+  }
+}
+
+.socialmedias{
+  margin-left: 120px;
 }
 /*.submit {
   position: absolute;

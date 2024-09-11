@@ -4,10 +4,14 @@
   padding: 2rem;
   text-align: center;
 }*/
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lilita+One&display=swap");
 * {
   margin: 0pc;
   padding: 0px;
   cursor: default;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .logo {
@@ -62,6 +66,7 @@
   font-weight: bold;
   font-size: large;
   cursor: pointer;
+  font-weight: 10;
 }
 
 /*Headline*/

@@ -8,9 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Contact.css" />
     <link rel="stylesheet" type="text/css" href="App.css" />
     <link href="assets/css/all.css" rel="stylesheet" />
-    <a href="App.jsx"
-      ><img class="logo" src="assets/cultLogo 2.png" alt="Logo"
-    /></a>
+    <a href=""><img class="logo" src="assets/cultLogo 2.png" alt="Logo" /></a>
   </head>
   <body>
     <div class="title">
@@ -25,11 +23,16 @@
       <h1 class="formtitle">Get In Touch!</h1>
       <form
         id="contact_form"
-        action="#"
+        action="https://api.web3forms.com/submit"
         method="POST"
         enctype="multipart/form-data"
       >
         <div class="row">
+          <input
+            type="hidden"
+            name="access_key"
+            value="59e7fa59-55eb-46ee-acca-ae40fc6b8dbb"
+          />
           <label class="required" for="name">Your name:</label><br />
           <input
             id="name"
@@ -37,6 +40,7 @@
             name="name"
             type="text"
             value=""
+            required
             size="30"
           /><br />
           <span id="name_validation" class="error_message"></span>
@@ -49,6 +53,7 @@
             name="email"
             type="text"
             value=""
+            required
             size="30"
           /><br />
           <span id="email_validation" class="error_message"></span>
@@ -67,6 +72,7 @@
             id="message"
             class="input"
             name="message"
+            required
             rows="7"
             cols="30"
           ></textarea
@@ -100,19 +106,19 @@
       <div class="quickLinks">
         <ul>
           <li>
-            <a href="src/About.html">About Us</a>
+            <a href="About.html">About Us</a>
           </li>
           <li>
-            <a href="src/Services.html">Services</a>
+            <a href="Services.html">Services</a>
           </li>
           <li>
-            <a href="src/Portfolio.html">Portfolio</a>
+            <a href="Portfolio.html">Portfolio</a>
           </li>
           <li>
             <a href="Blog.html">Blog</a>
           </li>
           <li>
-            <a href="src/Contact.html">Contact Us</a>
+            <a href="Contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
