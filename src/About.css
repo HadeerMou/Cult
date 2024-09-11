@@ -59,21 +59,27 @@
 .vision {
   float: right;
 }
-.s {
+.s1 {
   border-top: 1px dotted;
+}
+.s2 {
+  border-top: 1px dotted;
+  margin-top: -40px;
 }
 .services {
   margin-top: 20px;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.89);
+  background: rgba(255, 255, 255, 0.89);
 }
 .serv {
   text-align: center;
 }
 .serv li {
+  font-size: 30px;
   margin: 50px;
   display: inline;
   padding: 20px;
+  color: rgba(242, 147, 147, 0.937);
 }
 
 .story {
@@ -88,7 +94,8 @@
   padding: 30px;
 }
 .arrow {
-  margin-left: 50%;
+  margin-left: 48%;
+  text-shadow: 2px 2px 5px white;
 }
 
 .ourstory {

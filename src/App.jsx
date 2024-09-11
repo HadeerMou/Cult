@@ -66,7 +66,7 @@ function Home() {
 function Services() {
   return (
     <>
-      <section>
+      <div className="slider">
         <h1 className="title">Featured Services</h1>
         <br />
         <div className="services">
@@ -101,8 +101,40 @@ function Services() {
             <h1>Photography: </h1>
             <p>Professional photography that brings your brand to life.</p>
           </div>
+
+          <div className="service">
+            <img src="src/assets/web.jpg" alt="" />
+            <h1>Web Development:</h1>
+            <p>
+              Custom, responsive, and scalable websites that engage and convert.
+            </p>
+          </div>
+
+          <div className="service">
+            <img src="src/assets/marketing.jpg" alt="" />
+            <h1>Digital Marketing: </h1>
+            <p>
+              Data-driven strategies that boost your brand’s visibility and
+              impact.
+            </p>
+          </div>
+
+          <div className="service">
+            <img src="src/assets/design.jpg" alt="" />
+            <h1>Graphic Design: </h1>
+            <p>
+              Creative visuals that capture attention and communicate your
+              message.
+            </p>
+          </div>
+
+          <div className="service">
+            <img src="src/assets/photography 1.png" alt="" />
+            <h1>Photography: </h1>
+            <p>Professional photography that brings your brand to life.</p>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

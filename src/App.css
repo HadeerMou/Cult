@@ -11,7 +11,7 @@
 }
 
 .logo {
-  height: 6em;
+  height: 6pc;
   padding: 1em;
   will-change: filter;
   transition: filter 300ms;
@@ -108,6 +108,10 @@
 }
 
 /*Services*/
+.slider {
+  margin: auto;
+  position: relative;
+}
 .title {
   font-size: 60px;
   font-weight: bold;
@@ -117,30 +121,73 @@
 .service {
   display: grid;
   grid-template-rows: min-content;
-  gap: var(--size-2);
-  background: var(--surface-2);
-  border-radius: var(--raius-2);
   max-width: 20rem;
-  margin-right: 24rem;
+  margin-right: 13rem;
 }
 .service {
-  display: inline;
+  text-align: center;
+  perspective: 100px;
 }
 .services {
   display: flex;
   flex-direction: row;
   font-size: 22px;
   margin-bottom: 5rem;
+  width: calc(350px * 8);
+  animation: scroll 20s linear infinite;
 }
 .service img {
-  width: 700px;
-  height: 700px;
+  width: 100%;
+  width: 500px;
+  height: 500px;
   padding: 20px 0px;
+  transition: transform 1s;
+}
+.service img:hover {
+  transform: translateZ(10px);
 }
 .service p {
   font-size: 20px;
-  color: #000;
+  color: rgba(212, 90, 90, 0.459);
   max-width: 100%;
+  text-shadow: 1px 1px 4px #00000073;
+}
+.service h1 {
+  letter-spacing: 12px;
+  margin-bottom: 12px;
+  font-size: 35px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0)
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
 }
 
 /*Footer*/

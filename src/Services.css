@@ -4,3 +4,131 @@
   margin: 0px;
   padding: 0px;
 }
+.menu {
+  display: inline-block;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 85%;
+  align-items: end;
+}
+.menu i {
+  cursor: pointer;
+}
+.menu i:target ~ .menu-items {
+}
+.items {
+  position: fixed;
+  top: 0;
+  width: 100vh;
+  height: 10vh;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  font-size: 50px;
+  line-height: 120px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.319);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.items li {
+  width: 100%;
+}
+.items a {
+  width: 100%;
+  text-decoration: none;
+}
+
+/*TITLE*/
+.Title {
+  letter-spacing: 50px;
+  font-size: 140px;
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 2px 3px 5px rgb(174, 134, 61);
+}
+
+/*BODY*/
+.services1 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 0.3fr 0.2fr;
+  padding: 3rem 1rem;
+  margin-left: 2rem;
+  margin-top: 2pc;
+}
+.services2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5fr 0.3fr 0.2fr;
+  column-gap: 5px;
+  padding: 3rem 1rem;
+  margin-left: 2rem;
+  margin-top: 2pc;
+}
+.simg img {
+  width: 580px;
+  height: 650px;
+}
+.simg {
+  display: inline-block;
+}
+.top h1,
+.top2 h1 {
+  font-size: 60px;
+  padding: 1pc 0px;
+}
+.top {
+  padding-left: 10pc;
+  flex-direction: column;
+  width: 40pc;
+}
+.top2 {
+  padding-left: 4pc;
+  flex-direction: column;
+  max-width: 40pc;
+}
+.top p,
+.top2 p {
+  margin-top: 5pc;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 26px;
+}
+
+.bottom h3 {
+  line-height: 45px;
+  font-size: 16px;
+}
+.bottom {
+  padding: 40px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.book:hover {
+  background-color: rgba(209, 179, 134, 0.558);
+  transition: 0.6s ease;
+}
+.book {
+  position: absolute;
+  display: block;
+  padding: 19px;
+  background-color: blanchedalmond;
+  color: black;
+  border-radius: 15px;
+  border: 30px;
+  width: 12pc;
+  font-size: large;
+  font-weight: bold;
+}
+.book i {
+  margin: 2px;
+  color: black;
+  background-color: transparent;
+}

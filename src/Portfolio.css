@@ -46,8 +46,12 @@ body {
   display: inline-block;
 }
 /*WEB*/
+.dquote {
+  letter-spacing: 15px;
+  font-size: 18px;
+  color: rgba(255, 225, 0, 0.875);
+}
 .web-development h1 {
-  font-size: 40px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -130,6 +134,7 @@ body {
   margin: auto;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 /*CLIENTS TESTIMONIALS*/
@@ -194,6 +199,10 @@ body {
 .profileImg img {
   width: 100%;
   height: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100px;
   object-fit: cover;
   object-position: center;
 }
@@ -227,36 +236,6 @@ body {
 .comment p {
   color: #242424;
   font-size: 1rem;
-}
-.intro {
-  font-size: 18px;
-  font-weight: lighter;
-  text-align: center;
-  line-height: 40px;
-  margin: 7rem 10rem 2rem 10rem;
-  padding: 3rem;
-}
-.bookNow {
-  margin-bottom: 10rem;
-}
-.book {
-  position: absolute;
-  left: 50%;
-  display: block;
-  padding: 18px;
-  margin: 0;
-  background-color: blanchedalmond;
-  color: black;
-  border-radius: 30px;
-  border: 30px;
-  width: 12pc;
-  font-size: large;
-  font-weight: bolder;
-}
-.book i {
-  margin: 2px;
-  color: black;
-  background-color: transparent;
 }
 
 /*DIGITAL MARKETING*/
@@ -333,6 +312,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 1s;
+  /*animation: scroll 20s linear infinite;*/
 }
 
 .slide_div {
@@ -356,16 +336,15 @@ body {
 }
 .button {
   position: absolute;
-  width: 400px;
+  width: 350px;
   height: 370px;
   transition: 0.7s;
-  background-color: #00000038;
+  background-color: #00000046;
   border-radius: 20px;
 }
 .button:hover {
-  background-color: #00000009;
+  background-color: #56555509;
 }
-
 #slider1:target ~ .imgGraphic #img1,
 #slider1:target ~ .imgGraphic #button1 {
   width: 390px;
@@ -435,6 +414,15 @@ body {
 }
 #slider7:target ~ .imgGraphic {
   left: -60%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 14));
+  }
 }
 
 /*Photography*/
@@ -575,4 +563,40 @@ body {
 }
 .content:hover > * {
   transform: translateY(0px);
+}
+
+/*book now*/
+
+.intro {
+  font-size: 26px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 40px;
+  margin: 7rem 10rem 2rem 10rem;
+  padding: 3rem 0rem;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.77);
+  letter-spacing: 10px;
+}
+.bookNow {
+  margin-bottom: 10rem;
+}
+.book {
+  position: absolute;
+  left: 50%;
+  display: block;
+  padding: 18px;
+  margin: 0;
+  background-color: rgb(255, 226, 205);
+  color: black;
+  border-radius: 30px;
+  border: 30px;
+  width: 12pc;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.book i {
+  margin: 2px;
+  color: black;
+  background-color: transparent;
 }
