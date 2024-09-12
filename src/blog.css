@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  background-color: #181818;
+  color: white;
+}
+
+.Title {
+  font-size: 170px;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 20px;
+}
+
+.events {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto; /*scorable bar*/
+  overscroll-behavior-inline: contain;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8pc;
+}
+.events a {
+  text-decoration: none;
+}
+
+.event img {
+  height: 35pc;
+}
+
+.event {
+  background-color: rgba(29, 28, 28, 0.748);
+  box-shadow: 2px 3px 6px rgba(238, 233, 233, 0.681);
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 30px;
+  box-shadow: 4px;
+  padding: 15px;
+  margin: 1dvh;
+  height: 900px;
+  width: 450px;
+}
+.event > * {
+  transform: translateY(25px);
+  transition: transform 0.8s;
+}
+.event:hover > * {
+  transform: translateZ(10px);
+  cursor: pointer;
+}
+.event > img {
+  inline-size: 100%;
+  aspect-ratio: 7/9;
+  object-fit: cover;
+}
+
+.event h4,
+.event p {
+  font-weight: lighter;
+  background-color: transparent;
+  color: rgba(242, 243, 249, 0.922);
+  text-align: center;
+}
+.event h4 {
+  font-size: 30px;
+}
+.event p {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

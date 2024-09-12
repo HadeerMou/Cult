@@ -5,6 +5,8 @@
   text-align: center;
 }*/
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
 * {
   margin: 0pc;
   padding: 0px;
@@ -71,11 +73,11 @@
 
 /*Headline*/
 .headline {
-  padding: 5rem;
+  padding: 5rem 0rem;
   text-align: center;
 }
 .headline h2 {
-  font-size: 80px;
+  font-size: 90px;
   max-width: 1200px;
   margin-left: 10%;
 }
@@ -202,12 +204,15 @@
   color: white;
   font-size: 18px;
 }
+.footer * {
+  background-color: transparent;
+}
 .contact-info {
   all: unset;
   display: inline-block;
   justify-content: space-evenly;
   margin-right: 28rem;
-  margin-left: 7rem;
+  margin-left: 6rem;
   line-height: 2.5rem;
 }
 .contact-info h2 {

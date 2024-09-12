@@ -1,21 +1,24 @@
 function Header() {
   return (
     <>
-      <a href="#">
+      <a href="">
         <img className="logo" src="src/assets/cultLogo 1.png" alt="Logo" />
       </a>
       <ul className="links">
         <li>
-          <a href="App.jsx">Home</a>
+          <a href="src/home.html">Home</a>
         </li>
         <li>
           <a href="src/About.html">About</a>
         </li>
         <li>
-          <a href="src/Services.html">Services</a>
+          <a href="src/services.html">Services</a>
         </li>
         <li>
           <a href="src/Portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="src/blog.html">Blog</a>
         </li>
         <li>
           <a href="src/Contact.html">Contact</a>

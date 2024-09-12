@@ -1,25 +1,27 @@
 * {
-  background-color: rgb(16, 16, 16);
+  background-color: #181818;
   color: white;
   margin: 0px;
   padding: 0px;
   scrollbar-width: none;
-  width: fit-content;
 }
+
 .img {
   display: inline-block;
   width: 20rem;
   margin-left: 70px;
 }
-.img img{
-  width: 900px;
+.img img {
+  width: 800px;
 }
-.contact{
+.contact {
   display: inline-block;
+  padding: 80px 0px;
 }
 .formtitle {
   padding: 5rem 5rem 3rem 5rem;
   font-size: 60px;
+  color: rgba(224, 141, 141, 0.855);
 }
 #contact_form {
   margin-left: 5rem;
@@ -28,7 +30,6 @@
 #contact_form * {
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 .row label {
   font-size: 26px;
@@ -50,7 +51,6 @@ textarea {
 }
 input[type="text"] {
   height: 15px;
-
 }
 input[type="submit"] {
   margin-left: 7pc;
@@ -64,28 +64,25 @@ input[type="submit"] {
   box-shadow: 5px 5px 5px #5e5e5e;
   cursor: pointer;
 }
-#submit_button:hover{
+#submit_button:hover {
   background-color: #b0a00a;
   transition: all 1s ease;
 }
-#inquiryType{
+#inquiryType {
   font-size: 18px;
   font-weight: bold;
   size: 18px;
 }
 
 @media (max-width: 800px) {
-  #contact_form{
+  #contact_form {
     width: 80vw;
   }
-  .img{
+  .img {
     display: none;
   }
 }
 
-.socialmedias{
-  margin-left: 120px;
-}
 /*.submit {
   position: absolute;
   display: block;
@@ -98,4 +95,8 @@ input[type="submit"] {
   width: 10pc;
   font-size: large;
   font-weight: bolder;
+}*/
+
+.footer * {
+  padding: 0pc 4.4px;
 }
