@@ -51,3 +51,51 @@
   max-width: 70pc;
   line-height: 26px;
 }
+.blogcontent li {
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+.one * {
+  background-color: transparent;
+}
+.one {
+  padding: 10px;
+  background-color: rgba(210, 191, 205, 0.662);
+  border-radius: 10px;
+}
+
+.two * {
+  background-color: transparent;
+}
+.two {
+  padding: 10px;
+  background-color: rgba(233, 229, 170, 0.748);
+  border-radius: 10px;
+}
+
+.three * {
+  background-color: transparent;
+}
+.three {
+  padding: 10px;
+  background-color: rgba(232, 205, 196, 0.627);
+  border-radius: 10px;
+}
+
+.four * {
+  background-color: transparent;
+}
+.four {
+  padding: 10px;
+  background-color: rgba(178, 165, 210, 0.514);
+  border-radius: 10px;
+}
+
+.five * {
+  background-color: transparent;
+}
+.five {
+  padding: 10px;
+  background-color: rgba(127, 255, 212, 0.149);
+  border-radius: 10px;
+}
